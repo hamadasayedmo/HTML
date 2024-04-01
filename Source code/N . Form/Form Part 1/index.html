@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Part 01</title>
+    </head>
+    
+    <body>
+
+        <h1>Form</h1>
+        
+        <form action="Hamada.php" method="POST">
+            
+
+            <!-- UserName -->
+            <div>
+                <label for="u">UserName</label>
+                <input type="text" required placeholder="UserName" name="UserName" id="u">
+                <br><br>
+            </div>
+
+
+            <!-- PassWord -->
+            <div>
+                <label for="p">PassWord</label>
+                <input type="password" required  placeholder="PassWord" name="PassWord" id="p">
+                <br><br>
+            </div>
+            
+
+            <!-- Email -->
+            <div>
+                <label for="e">Email</label>
+                <input type="email" required placeholder="Email" value="hh0809070@gmail.com" name="Email" id="e" readonly>
+                <br><br>
+            </div>
+
+
+            <!-- hidden -->
+            <div>
+                <input type="hidden">  <!-- بيانات مخفيه عن المستخدم  -->
+            </div>
+
+
+            <!-- Range -->
+            <div>
+                <label for="r">Range</label>
+                <input type="range" id="r" min="0" max="100" step="20" value="0">
+                <br><br>
+            </div>
+
+
+            <!-- Number -->
+            <div>
+                <label for="n">Number</label>
+                <input type="Number" id="n"  min="0" max="100" step="10" value="0">
+                <br><br>
+            </div>
+
+            
+            <!-- Patton -->
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Save">
+            </div>
+        </form>
+    </body>
+</html>
